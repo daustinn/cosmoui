@@ -1,0 +1,45 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Cosmo UI"
+  description="Cosmo UI - Catalog of components for web development. For React and TailwindCSS.">
+  <main class="grid place-content-center h-screen">
+    <span class="grid-background fixed inset-0 pointer-events-none select-none"
+    ></span>
+    <div class="opacity-90">
+      <img
+        draggable={false}
+        width={200}
+        class="mx-auto pointer-events-none select-none"
+        src="/logo.svg"
+      />
+    </div>
+    <h1 class="text-9xl text-white font-semibold tracking-tight">
+      Cosmo <b>UI</b>
+    </h1>
+    <p class="text-3xl text-center mx-auto opacity-70 max-w-[25ch] text-pretty">
+      Catalog of components for web development. For React and TailwindCSS.
+    </p>
+    <footer class="text-lg fixed text-center p-4 bottom-0 inset-x-0">
+      <p>
+        This project is under construction by{" "}
+        <a
+          target="_blank"
+          title="Daustinn web site"
+          href="https://daustinn.com"
+          class="font-semibold hover:underline text-white">
+          Daustinn
+        </a>
+      </p>
+    </footer>
+  </main>
+</Layout>
+
+<style>
+  .grid-background {
+    background-size: 2em 2em;
+    background-image: radial-gradient(#454545 5%, transparent 0);
+  }
+</style>
